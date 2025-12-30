@@ -1,135 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neil | Systems Architect</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        :root {
-            --bg-color: #f8fafc;
-            --text-main: #1e293b;
-            --text-muted: #475569;
-            --accent: #2563eb;
-            --card-bg: #ffffff;
-        }
+      :root {
+        --bg-color: #f8fafc;
+        --text-main: #1e293b;
+        --text-muted: #475569;
+        --accent: #2563eb;
+        --card-bg: #ffffff;
+      }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', -apple-system, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            line-height: 1.7;
-        }
+      /* Prevent horizontal scroll and handle vertical behavior */
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+      }
 
-        .container {
-            max-width: 640px;
-            padding: 2rem;
-            text-align: left; /* Changed to left-aligned for a more professional 'letter' feel */
-        }
+      body {
+        font-family: "Inter", -apple-system, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        line-height: 1.7;
+        position: relative; /* Context for absolute blobs */
+      }
 
+      .container {
+        max-width: 640px;
+        width: 90%; /* Ensure it doesn't hit screen edges on mobile */
+        padding: 2rem 0;
+        text-align: left;
+        z-index: 1; /* Keep content above blobs */
+      }
+
+      .card {
+        background: var(--card-bg);
+        padding: 3.5rem;
+        border-radius: 24px;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05),
+          0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+      }
+
+      h1 {
+        font-size: 2.25rem;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.025em;
+      }
+
+      .bio-content p {
+        font-size: 1.1rem;
+        color: var(--text-muted);
+        margin-bottom: 1.5rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s ease;
+      }
+
+      a:hover {
+        border-bottom: 1px solid var(--accent);
+      }
+
+      footer {
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        color: #94a3b8;
+        padding-left: 3.5rem;
+      }
+
+      /* Background Decoration - Fixed positioning */
+      .blob {
+        position: fixed; /* Fixed so they don't contribute to page height */
+        z-index: -1;
+        filter: blur(80px);
+        opacity: 0.35;
+        border-radius: 50%;
+        pointer-events: none; /* Ensure they don't interfere with clicks */
+      }
+      .blob-1 {
+        width: 400px;
+        height: 400px;
+        background: #dbeafe;
+        top: -100px;
+        left: -100px;
+      }
+      .blob-2 {
+        width: 300px;
+        height: 300px;
+        background: #ede9fe;
+        bottom: -50px;
+        right: -50px;
+      }
+
+      @media (max-width: 600px) {
         .card {
-            background: var(--card-bg);
-            padding: 3.5rem;
-            border-radius: 24px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 
-                        0 8px 10px -6px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.7);
+          padding: 2rem;
         }
-
-        h1 {
-            font-size: 2.25rem;
-            font-weight: 600;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.025em;
-        }
-
-        .bio-content p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1px solid transparent;
-            transition: all 0.2s ease;
-        }
-
-        a:hover {
-            border-bottom: 1px solid var(--accent);
-        }
-
         footer {
-            margin-top: 2rem;
-            font-size: 0.85rem;
-            color: #94a3b8;
-            padding-left: 3.5rem; /* Align with card content */
+          padding-left: 2rem;
         }
-
-        /* Subtle Background Decoration */
-        .blob {
-            position: absolute;
-            z-index: -1;
-            filter: blur(80px);
-            opacity: 0.35;
-            border-radius: 50%;
-        }
-        .blob-1 {
-            width: 400px; height: 400px;
-            background: #dbeafe;
-            top: -100px; left: -100px;
-        }
-        .blob-2 {
-            width: 300px; height: 300px;
-            background: #f1f5f9;
-            bottom: -50px; right: -50px;
-        }
-
-        @media (max-width: 600px) {
-            .card { padding: 2rem; }
-            .container { padding: 1rem; }
-            footer { padding-left: 2rem; }
-        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
     <main class="container">
-        <div class="card">
-            <h1>Hi, I'm Neil</h1>
-            
-            <div class="bio-content">
-                <p>
-                    I’m a code wrangler—I’ve been wrangling code for over 25 years. 
-                    <a href="./vitae/index.html">Professionally</a>, most of my experience has been in banking and capital markets, 
-                    designing robust architectures for high-stakes environments.
-                </p>
+      <div class="card">
+        <h1>Hi, I'm Neil</h1>
 
-                <p>
-                    I am always learning new things, and <a href="./langlines/">langlines</a> 
-                    is a recent-ish result of me learning some Spanish and trying out Google's Antigravity.
-                </p>
-            </div>
+        <div class="bio-content">
+          <p>
+            I’m a code wrangler—I’ve been wrangling code for over 25 years.
+            <a href="./vitae/index.html">Professionally</a>, most of my
+            experience has been in banking and capital markets, designing robust
+            architectures for high-stakes environments.
+          </p>
+
+          <p>
+            I am always learning new things, and
+            <a href="./langlines/">langlines</a>
+            is a recent-ish result of me learning some Spanish and trying out
+            Google's Antigravity.
+          </p>
         </div>
+      </div>
 
-        <footer>
-            &copy; <script>document.write(new Date().getFullYear())</script> Neil.
-        </footer>
+      <footer>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Neil.
+      </footer>
     </main>
-
-</body>
+  </body>
 </html>
