@@ -11,119 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        --bg-color: #f8fafc;
-        --text-main: #1e293b;
-        --text-muted: #475569;
-        --accent: #2563eb;
-        --card-bg: #ffffff;
-      }
-
-      /* Prevent horizontal scroll and handle vertical behavior */
-      html,
-      body {
-        width: 100%;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: "Inter", -apple-system, sans-serif;
-        background-color: var(--bg-color);
-        color: var(--text-main);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        line-height: 1.7;
-        position: relative; /* Context for absolute blobs */
-      }
-
-      .container {
-        max-width: 640px;
-        width: 90%; /* Ensure it doesn't hit screen edges on mobile */
-        padding: 2rem 0;
-        text-align: left;
-        z-index: 1; /* Keep content above blobs */
-      }
-
-      .card {
-        background: var(--card-bg);
-        padding: 3.5rem;
-        border-radius: 24px;
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05),
-          0 8px 10px -6px rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.7);
-      }
-
-      h1 {
-        font-size: 2.25rem;
-        font-weight: 600;
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-        letter-spacing: -0.025em;
-      }
-
-      .bio-content p {
-        font-size: 1.1rem;
-        color: var(--text-muted);
-        margin-bottom: 1.5rem;
-      }
-
-      a {
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 500;
-        border-bottom: 1px solid transparent;
-        transition: all 0.2s ease;
-      }
-
-      a:hover {
-        border-bottom: 1px solid var(--accent);
-      }
-
-      footer {
-        margin-top: 2rem;
-        font-size: 0.85rem;
-        color: #94a3b8;
-        padding-left: 3.5rem;
-      }
-
-      /* Background Decoration - Fixed positioning */
-      .blob {
-        position: fixed; /* Fixed so they don't contribute to page height */
-        z-index: -1;
-        filter: blur(80px);
-        opacity: 0.35;
-        border-radius: 50%;
-        pointer-events: none; /* Ensure they don't interfere with clicks */
-      }
-      .blob-1 {
-        width: 400px;
-        height: 400px;
-        background: #dbeafe;
-        top: -100px;
-        left: -100px;
-      }
-      .blob-2 {
-        width: 300px;
-        height: 300px;
-        background: #ede9fe;
-        bottom: -50px;
-        right: -50px;
-      }
-
-      @media (max-width: 600px) {
-        .card {
-          padding: 2rem;
-        }
-        footer {
-          padding-left: 2rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="blob blob-1"></div>
@@ -142,11 +30,22 @@
           </p>
 
           <p>
+            I started <a href="https://lines-of-crow.blogspot.com/">blogging</a>
+            at one point and keep reminding myself that I should probably try todo it more often.
+          </p>
+
+          <p>
             I am always learning new things, and
             <a href="./langlines/">langlines</a>
             is a recent-ish result of me learning some Spanish and trying out
             Google's Antigravity.
           </p>
+
+          <p>
+            I'm working my way through a Udemy course on aws at the moment,
+            keeping a list of useful <a href="./saa-c03.html">links</a> here.
+          </p>
+
         </div>
       </div>
 
