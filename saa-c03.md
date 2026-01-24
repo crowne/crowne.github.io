@@ -91,3 +91,8 @@ header-includes:
 - [AWS RAM Cheat Sheet](https://digitalcloud.training/aws-resource-access-manager/)
 - [AWS Systems Manager Cheat Sheet](https://digitalcloud.training/aws-systems-manager/)
 - [AWS OpsWorks Cheat Sheet](https://digitalcloud.training/aws-opsworks/)
+
+### 14 Monitoring, Logging and Auditing
+- resource : [Cloudwatch Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html)
+- [Amazon CloudWatch](https://digitalcloud.training/amazon-cloudwatch/)
+- [AWS CloudTrail Cheat Sheet](https://digitalcloud.training/aws-cloudtrail/)
