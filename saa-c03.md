@@ -80,3 +80,14 @@ header-includes:
 - [Amazon Kinesis Cheat Sheet](https://digitalcloud.training/amazon-kinesis/)
 - [Amazon Athena Cheat Sheet](https://digitalcloud.training/amazon-athena/)
 - [AWS Glue Cheat Sheet](https://digitalcloud.training/aws-glue/)
+
+### 13 Deployment and Management
+- resource : [Shareable AWS resources](https://docs.aws.amazon.com/ram/latest/userguide/shareable.html)
+- resource : [AWS DR Part I](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/)
+- resource : [AWS DR Part III](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/)
+- [AWS CloudFormation Cheat Sheet](https://digitalcloud.training/aws-cloudformation/)
+- [AWS Elastic Beanstalk Cheat Sheet](https://digitalcloud.training/aws-elastic-beanstalk/)
+- [AWS Config Cheat Sheet](https://digitalcloud.training/aws-config/)
+- [AWS RAM Cheat Sheet](https://digitalcloud.training/aws-resource-access-manager/)
+- [AWS Systems Manager Cheat Sheet](https://digitalcloud.training/aws-systems-manager/)
+- [AWS OpsWorks Cheat Sheet](https://digitalcloud.training/aws-opsworks/)
