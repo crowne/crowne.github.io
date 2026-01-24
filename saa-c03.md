@@ -96,3 +96,11 @@ header-includes:
 - resource : [Cloudwatch Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html)
 - [Amazon CloudWatch](https://digitalcloud.training/amazon-cloudwatch/)
 - [AWS CloudTrail Cheat Sheet](https://digitalcloud.training/aws-cloudtrail/)
+
+### 15 Security in the Cloud
+- [AWS IAM Cheat Sheet](https://digitalcloud.training/aws-iam/)
+- [Amazon Cognito Cheat Sheet](https://digitalcloud.training/amazon-cognito/)
+- [AWS Directory Service Cheat Sheet](https://digitalcloud.training/aws-directory-services/)
+- [AWS KMS Cheat Sheet](https://digitalcloud.training/aws-kms/)
+- [AWS CloudHSM Cheat Sheet](https://digitalcloud.training/aws-cloudhsm/)
+- [AWS WAF & Shield Cheat Sheet](https://digitalcloud.training/aws-waf-shield/)
