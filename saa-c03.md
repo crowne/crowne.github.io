@@ -104,3 +104,6 @@ header-includes:
 - [AWS KMS Cheat Sheet](https://digitalcloud.training/aws-kms/)
 - [AWS CloudHSM Cheat Sheet](https://digitalcloud.training/aws-cloudhsm/)
 - [AWS WAF & Shield Cheat Sheet](https://digitalcloud.training/aws-waf-shield/)
+
+### 16 Migration and Transfer
+- [AWS Migration Services](https://digitalcloud.training/aws-migration-services/)
