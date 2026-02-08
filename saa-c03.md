@@ -87,6 +87,8 @@ header-includes:
 - resource : [AWS DR Part I](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/)
 - resource : [AWS DR Part III](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/)
 - [AWS CloudFormation Cheat Sheet](https://digitalcloud.training/aws-cloudformation/)
+  - [Intrinsic Functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+  - [Template Snippets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-snippets.html)
 - [AWS Elastic Beanstalk Cheat Sheet](https://digitalcloud.training/aws-elastic-beanstalk/)
 - [AWS Config Cheat Sheet](https://digitalcloud.training/aws-config/)
 - [AWS RAM Cheat Sheet](https://digitalcloud.training/aws-resource-access-manager/)
