@@ -7,3 +7,7 @@ npm install --global pandoc-bin
 
 pandoc saa-c03.md -f markdown -t html --template=pandoc_template.html -o saa-c03.html
 ```
+
+## google analytics
+- https://analytics.google.com/analytics/web/  
+  crowne-default / visitors
